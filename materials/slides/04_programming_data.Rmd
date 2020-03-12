@@ -344,7 +344,7 @@ b <- "3"
 ## Data types: character
 
 ```{r}
-typeof(a)
+typeof(a) # character produces larger object
 class(a)
 object.size(a)
 ```
@@ -437,7 +437,7 @@ object.size(hometown_f)
 hometown_large <- rep(hometown, times = 1000)
 # and the same content as factor
 hometown_large_f <- factor(hometown_large)
-# compare size
+# compare size factors are smaller due to clever memory allocation
 object.size(hometown_large)
 object.size(hometown_large_f)
 ```
